@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 
-public class Employee {
+public class Employee extends Spouse{
 	
 	private enum JenisGender{
 		Lakilaki,
@@ -29,8 +29,7 @@ public class Employee {
 	private int monthlySalary;
 	private int otherMonthlyIncome;
 	private int annualDeductible;
-
-	public String idNumber;
+	
 	private String spouseName;
 	private String spouseIdNumber;
 
@@ -41,7 +40,7 @@ public class Employee {
 		this.employeeId = employeeId;
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.idNumber = idNumber;
+
 		this.address = address;
 		this.tglJoined = tglJoined;
 		this.isForeigner = isForeigner;
@@ -92,7 +91,6 @@ public class Employee {
 		childNames.add(childName);
 		childIdNumbers.add(childIdNumber);
 	}
-
 	
 	public int getAnnualIncomeTax() {
 		
